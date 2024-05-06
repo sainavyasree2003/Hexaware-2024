@@ -1,0 +1,41 @@
+       class nameerror(Exception):
+           pass
+
+       def customer_name():
+           while True:
+               customer_name = input("Enter your name: ")
+               try:
+                   validate_name(customer_namename)
+                   return customer_name
+               except nameerror as e:
+                   print(e)
+
+       def validate_name(customer_name):
+           for char in customer_name:
+               if char.isdigit():
+                   raise nameerror("Name cannot contain digits.")
+''#class fileHandling(Exception):
+   def _init_(self, fname):
+    self.fname=fname
+   def open(self):
+         try:
+             self.file=open(self.fname, 'w+')
+             print('File Open Successfully:')
+         except fileHandling as e:
+             print(e,'my exception')
+   def read(self):
+     self.file.seek(0)
+     t=self.file.readlines()
+     print(t)
+
+   def write(self):
+     txt='This file with class:'
+     self.file.write(txt)
+   def close(self):
+    self.file.close()
+
+obj=fileHandling(r'E:\hexaware/F1.txt')
+obj.open()
+obj.write()
+obj.read()
+obj.close()'''
